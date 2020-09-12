@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_detail_produk"
+    tools:context=".controller.Produk.DetailProduk">
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_detailPic_produk"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="85dp"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detTitleId_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="95dp"-->
+<!--            android:layout_marginRight="65dp"-->
+<!--            android:text="ID Produk :"-->
+<!--            android:textColor="@color/colortextorange"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detailId_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_detTitleId_produk"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="82dp"-->
+<!--            android:text="99"-->
+<!--            android:textColor="@color/colorPrimaryDarkOpacity"-->
+<!--            android:textSize="75dp"-->
+<!--            android:textStyle="normal" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detTitleNama_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/iv_detailPic_produk"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Nama Produk :"-->
+<!--            android:textColor="@color/colortextorange"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detTitleHarga_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_detTitleNama_produk"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Harga Produk :"-->
+<!--            android:textColor="@color/colortextorange"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detTitleStok_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_detTitleHarga_produk"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Stok Produk    :"-->
+<!--            android:textColor="@color/colortextorange"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detTitleKat_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_detTitleStok_produk"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Kategori           :"-->
+<!--            android:textColor="@color/colortextorange"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detailNama_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/iv_detailPic_produk"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="250dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Jagung"-->
+<!--            android:textColor="@color/colorBlackOpacity"-->
+<!--            android:textSize="25dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detailHarga_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_detailNama_produk"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="250dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Rp.5000"-->
+<!--            android:textColor="@color/colorBlackOpacity"-->
+<!--            android:textSize="25dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detailStok_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_detailHarga_produk"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="250dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="80"-->
+<!--            android:textColor="@color/colorBlackOpacity"-->
+<!--            android:textSize="25dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_detailKat_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_detailStok_produk"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="250dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Sayur"-->
+<!--            android:textColor="@color/colorBlackOpacity"-->
+<!--            android:textSize="25dp" />-->
+
+
+<!--        &lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/iv_brand"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="150dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="55dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:contentDescription="com.example.helloworldv4"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:srcCompat="@drawable/img_logo" />&ndash;&gt;-->
+
+<!--        &lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/tv_detailId_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="50dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_below="@id/iv_brand"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="45dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawableLeft="@drawable/ic_harga"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawablePadding="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:ems="10"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:inputType="numberSigned"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:letterSpacing="0.1"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:paddingLeft="15dp"&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash;        android:paddingRight="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="ID Produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColor="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColorHint="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textSize="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        />&ndash;&gt;-->
+
+<!--        &lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/tv_detailNama_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="50dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_below="@id/tv_detailId_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawableLeft="@drawable/ic_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawablePadding="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:ems="10"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:inputType="textPersonName"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:letterSpacing="0.1"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:paddingLeft="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        android:paddingRight="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="Nama Produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColor="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColorHint="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textSize="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        />&ndash;&gt;-->
+
+<!--        &lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/tv_detailHarga_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="50dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_below="@id/tv_detailNama_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawableLeft="@drawable/ic_harga"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawablePadding="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:ems="10"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:inputType="numberDecimal"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:letterSpacing="0.1"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        android:paddingLeft="15dp"&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash;        android:paddingRight="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="Harga Produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColor="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColorHint="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textSize="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        />&ndash;&gt;-->
+<!--        &lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/tv_detailStok_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="50dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_below="@id/tv_detailHarga_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawableLeft="@drawable/ic_harga"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawablePadding="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:ems="10"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:inputType="numberDecimal"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:letterSpacing="0.1"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        android:paddingLeft="15dp"&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash;        android:paddingRight="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="Stok Produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColor="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColorHint="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textSize="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        />&ndash;&gt;-->
+
+<!--        &lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/tv_detailKategori_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="50dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_below="@id/tv_detailStok_produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawableLeft="@drawable/ic_stok"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawablePadding="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:ems="10"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:inputType="number"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:letterSpacing="0.1"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:paddingLeft="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        android:paddingRight="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="Kategori Produk"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColor="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColorHint="@color/colortextorange"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textSize="15dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        />&ndash;&gt;-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_edit_produk"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="67dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+
+
+<!--            android:layout_marginRight="42dp"-->
+<!--            android:layout_marginBottom="62dp"-->
+<!--            android:src="@drawable/ic_edit" />-->
+
+
+<!--    </RelativeLayout>-->
+
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>

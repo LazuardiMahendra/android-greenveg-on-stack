@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_detail_produk"
+    tools:context=".controller.History.HistoryActivity">
+
+    //Start Date
+
+    <EditText
+        android:id="@+id/lp_et_start_date"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Date Start"
+        android:letterSpacing="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:textSize="19dp" />
+
+    //End Date
+
+    <EditText
+        android:id="@+id/lp_et_end_date"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lp_et_start_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="15dp"
+
+        android:ems="10"
+        android:hint="Date End"
+        android:letterSpacing="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:textSize="19dp" />
+
+    //Info 1
+
+    <EditText
+        android:id="@+id/lp_et_info1"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/lp_et_end_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        android:drawablePadding="15dp"
+
+        android:ems="10"
+        android:hint="Transaction Info"
+        android:letterSpacing="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:textSize="19dp" />
+
+    //Info 2
+
+    <EditText
+        android:id="@+id/h_et_info2"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/lp_et_info1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:drawablePadding="15dp"
+
+        android:ems="10"
+        android:hint="Transaction Info"
+        android:letterSpacing="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:textSize="19dp" />
+
+    //Info 3
+
+    <EditText
+        android:id="@+id/h_et_info3"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/h_et_info2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:drawablePadding="15dp"
+
+        android:ems="10"
+        android:hint="Transaction Info"
+        android:letterSpacing="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:textSize="19dp" />
+
+    //text income
+
+    <TextView
+        android:id="@+id/lp_income"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/h_et_info3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Income"
+        android:textSize="20dp" />
+
+    //text tax
+
+    <TextView
+        android:id="@+id/lp_tax"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/lp_income"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Tax"
+        android:textSize="20dp" />
+
+    ///
+
+    <EditText
+        android:id="@+id/lp_total_income"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/h_et_info3"
+        android:layout_alignLeft="@id/lp_income"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp."
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/lp_total_tax"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/lp_total_income"
+        android:layout_alignLeft="@id/lp_tax"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp."
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bt_detail_lp"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/lp_total_tax"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:onClick="panggildetaillaporan"
+        android:text="Detail"
+        android:textColor="@color/colortextorange"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

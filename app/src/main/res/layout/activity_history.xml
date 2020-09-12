@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/b_detail_produk"
+tools:context=".controller.History.HistoryActivity">
+
+<Button
+    android:id="@+id/bt_detail_hs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Detail"
+    android:background="@color/colorWhite"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="60dp"
+    android:textColor="@color/colortextorange"
+    android:layout_marginBottom="70dp"
+    android:onClick="panggildetailhistory"
+    android:textSize="25dp"/>
+
+
+<TextView
+    android:id="@+id/hs_et_start_date"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="120dp"
+
+    android:drawableLeft="@drawable/ic_calendar"
+    android:drawablePadding="15dp"
+    android:ems="10"
+    android:hint="Date Start"
+    android:letterSpacing="0.1"
+
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textColor="@color/colortextorange"
+    android:textColorHint="@color/colortextorange"
+    android:textSize="19dp" />
+
+<TextView
+    android:id="@+id/hs_et_end_date"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/hs_et_start_date"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:drawableLeft="@drawable/ic_calendar"
+    android:drawablePadding="15dp"
+
+    android:ems="10"
+    android:hint="Date End"
+    android:letterSpacing="0.1"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textColor="@color/colortextorange"
+    android:textColorHint="@color/colortextorange"
+    android:textSize="19dp"/>
+
+<TextView
+    android:id="@+id/l_et_info1"
+    android:layout_width="300dp"
+    android:layout_height="90dp"
+    android:layout_below="@id/hs_et_end_date"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp"
+
+    android:drawablePadding="15dp"
+
+    android:ems="10"
+    android:hint="Transaction Info"
+    android:letterSpacing="0.1"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textColor="@color/colortextorange"
+    android:textColorHint="@color/colortextorange"
+    android:textSize="19dp"/>
+
+<TextView
+    android:id="@+id/l_et_info2"
+    android:layout_width="300dp"
+    android:layout_height="90dp"
+    android:layout_below="@id/l_et_info1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+
+    android:drawablePadding="15dp"
+
+    android:ems="10"
+    android:hint="Transaction Info"
+    android:letterSpacing="0.1"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textColor="@color/colortextorange"
+    android:textColorHint="@color/colortextorange"
+    android:textSize="19dp"/>
+
+<TextView
+    android:id="@+id/l_et_info3"
+    android:layout_width="300dp"
+    android:layout_height="90dp"
+    android:layout_below="@id/l_et_info2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+
+    android:drawablePadding="15dp"
+
+    android:ems="10"
+    android:hint="Transaction Info"
+    android:letterSpacing="0.1"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textColor="@color/colortextorange"
+    android:textColorHint="@color/colortextorange"
+    android:textSize="19dp"/>
+
+
+</RelativeLayout>

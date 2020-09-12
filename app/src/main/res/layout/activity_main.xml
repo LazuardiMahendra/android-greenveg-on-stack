@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50dp"
+
+        android:contentDescription="com.example.helloworldv4"
+        app:srcCompat="@drawable/img_logo"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/iv_brand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="Masukan Email"
+
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:letterSpacing="0.1"
+        tools:ignore="Autofill"
+        android:labelFor="@id/et_email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Masukan Password"
+
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:letterSpacing="0.1"
+        tools:ignore="Autofill"
+        android:labelFor="@id/et_email"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password"
+        />
+
+
+
+    <Button
+        android:id="@+id/bt_sign_in"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="sign in"
+        android:contentDescription="App Description"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:letterSpacing="0.2"
+        />
+
+    <Button
+        android:id="@+id/bt_sign_up"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/bt_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:onClick="panggilsignup"
+
+        android:text="sign up"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:letterSpacing="0.2"
+        />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bt_sign_up"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.1"
+        android:text="Copyright 2019 Lazu)"
+        android:textColor="@color/colorWhite"
+        />
+
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/bt_sign_up"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="@color/colorWhite"-->
+
+    <!--        android:text="Next"-->
+    <!--        android:textColor="@color/colorBlack"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:letterSpacing="0.2"-->
+    <!--        android:onClick="panggilDashboard"-->
+    <!--        />-->
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="app_brand">com.example.helloworldv4</string>
+    <string name="app_text">App Description</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="bt_sign_in">Sign In</string>
+    <string name="bt_sign_up">Sign Up</string>
+    <string name="www_ecashier_com">www.ecashier.com</string>
+</resources>

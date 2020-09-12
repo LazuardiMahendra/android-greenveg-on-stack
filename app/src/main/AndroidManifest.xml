@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectgreenveg">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Green Veg"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Beli" />
+        <activity android:name=".Keranjang.ListKeranjang" />
+        <activity android:name=".controller.Kategori.DetailKategori" />
+        <activity
+            android:name=".controller.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.SignUpActivity" />
+        </activity>
+        <activity android:name=".controller.Laporan.detail_laporan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Laporan.detail_laporan" />
+        </activity>
+        <activity android:name=".controller.Laporan.list_laporan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Laporan.list_laporan" />
+        </activity>
+        <activity android:name=".controller.History.DetailHistory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.History.DetailHistory" />
+        </activity>
+        <activity android:name=".controller.Transaksi.detail_transaksi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Transaksi.detail_transaksi" />
+        </activity>
+        <activity
+            android:name=".controller.Transaksi.ListTransaksi"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Transaksi.ListTransaksi" />
+        </activity>
+        <activity android:name=".controller.Laporan.LaporanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Laporan.LaporanActivity" />
+        </activity>
+        <activity android:name=".controller.History.HistoryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.History.HistoryActivity" />
+        </activity>
+        <activity android:name=".controller.History.ListHistory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.History.ListHistory" />
+        </activity>
+        <activity
+            android:name=".controller.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".controller.FragmentKategori" />
+        <activity android:name=".controller.Kategori.AddKategori">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Kategori.AddKategori" />
+        </activity>
+        <activity
+            android:name=".controller.Produk.ListProduk"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Produk.ListProduk" />
+        </activity>
+        <activity android:name=".controller.Produk.AddProduk">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Produk.AddProduk" />
+        </activity>
+        <activity
+            android:name=".controller.Kategori.ListKategori"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Kategori.ListKategori" />
+        </activity>
+        <activity android:name=".controller.Produk.DetailProduk">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Produk.DetailProduk" />
+        </activity>
+        <activity android:name=".controller.Produk.EditProduk">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.Produk.EditProduk" />
+        </activity>
+        <activity android:name=".controller.FragmentAddProduk" />
+        <activity android:name=".controller.TokoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controller.TokoActivity" />
+        </activity>
+        <activity
+            android:name=".controller.MenuSide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".controller.Pendaftaran" />
+        <activity
+            android:name=".controller.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

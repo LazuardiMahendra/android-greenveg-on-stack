@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.TokoActivity"
+    android:background="@drawable/b_toko"
+    >
+
+    <ImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="com.example.helloworldv4"
+        app:srcCompat="@drawable/img_logo" />
+
+
+
+<!--        //NPWP//-->
+
+    <TextView
+        android:id="@+id/title_npwp"
+        android:textColor="@color/colortextorange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:text="NPWP"
+        android:layout_below="@id/iv_brand"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/et_npwp"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="09.254.456.2-341.000"
+        android:layout_below="@id/title_npwp"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+<!--        //EMAIL//-->
+
+    <TextView
+        android:id="@+id/title_email"
+        android:textColor="@color/colortextorange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:text="Email"
+        android:layout_below="@id/et_npwp"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/et_email"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="greenveg@gmai.com"
+        android:layout_below="@id/title_email"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+<!--        //Password-->
+
+    <TextView
+        android:id="@+id/title_password"
+        android:textColor="@color/colortextorange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:text="Password"
+        android:layout_below="@id/et_email"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/et_password"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="1234567"
+        android:layout_below="@id/title_password"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+<!--        //Alamat-->
+
+    <TextView
+        android:id="@+id/title_alamat"
+        android:textColor="@color/colortextorange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:text="Alamat"
+        android:layout_below="@id/et_password"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/et_alamat"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="Malang"
+        android:layout_below="@id/title_alamat"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+<!--        //Ppn-->
+
+    <TextView
+        android:id="@+id/title_ppn"
+        android:textColor="@color/colortextorange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:text="PPN"
+        android:layout_below="@id/et_alamat"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/et_ppn"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="10%"
+        android:layout_below="@id/title_ppn"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et_ppn"
+            android:layout_marginTop="10dp"
+            android:text="Sign Up"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

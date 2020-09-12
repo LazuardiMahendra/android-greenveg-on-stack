@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_detail_produk"
+    tools:context=".controller.FragmentAddProduk">
+
+    <ImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+
+        android:contentDescription="com.example.helloworldv4"
+        app:srcCompat="@drawable/img_logo"
+        />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:layout_below="@id/iv_brand"
+        android:hint="Nama Produk"
+
+
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:letterSpacing="0.1"
+        android:drawableLeft="@drawable/ic_produk"
+
+        />
+
+    <EditText
+        android:id="@+id/et_harga"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Harga"
+        android:text="Rp."
+
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:letterSpacing="0.1"
+        android:drawableLeft="@drawable/ic_harga"
+
+        />
+
+    <EditText
+        android:id="@+id/et_stok"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_harga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Stok"
+
+
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:letterSpacing="0.1"
+        android:drawableLeft="@drawable/ic_stok"
+
+
+        />
+
+    <Button
+        android:id="@+id/bt_simpan"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Simpan"
+        android:contentDescription="App Description"
+        android:layout_below="@id/et_stok"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:onClick="panggilsimpan"
+        android:letterSpacing="0.2"
+        />
+
+    <Button
+        android:id="@+id/bt_batal"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/bt_simpan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+
+        android:text="Batal"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:letterSpacing="0.2"
+        android:onClick="reset"
+        />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/bt_next"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:text="Next"-->
+    <!--        android:contentDescription="App Description"-->
+    <!--        android:layout_below="@id/bt_batal"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+
+    <!--        android:background="@color/colorWhite"-->
+    <!--        android:textColor="@color/colorBlack"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:onClick="panggildetailproduk"-->
+    <!--        android:letterSpacing="0.2"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_nama"
+        android:layout_marginBottom="-50dp"
+        android:layout_centerHorizontal="true"
+
+        android:letterSpacing="0.1"
+        android:text="Copyright 2019 Lazu"
+        android:textColor="@color/colorWhite"
+        />
+</RelativeLayout>

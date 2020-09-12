@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_ellipse"
+    tools:context=".controller.DashboardActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_brand"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:contentDescription="www.echasier.com"
+                android:letterSpacing="0.2"
+                android:text="Transaksi"
+                app:srcCompat="@drawable/img_logo"/>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+
+
+            //tampilan transaksi
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bt_transaksi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/l_transaksi2"
+            android:onClick="panggiltransaksi"/>
+
+        <TextView
+            android:id="@+id/bt_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi"
+            android:textColor="#f2890d"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:onClick="panggiltransaksi"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+            //tampilan Produk
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bt_produk"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/l_produk2"
+                        android:onClick="panggilproduk"/>
+
+                    <TextView
+                        android:id="@+id/bt_produk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produk"
+                        android:textColor="#f2890d"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="panggilproduk"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //tampilan history
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bt_history"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/l_history2"
+                        android:onClick="panggilhistory"/>
+
+                    <TextView
+                        android:id="@+id/bt_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:textColor="#f2890d"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="panggilhistory"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //tampilan Laporan
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bt_laporan"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/l_laporan2"
+                        android:onClick="panggillaporan"/>
+
+                    <TextView
+                        android:id="@+id/bt_laporan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan"
+                        android:textColor="#f2890d"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="panggillaporan"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //tampilan toko
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bt_toko"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/l_toko2"
+                        android:onClick="panggiltoko"/>
+
+                    <TextView
+                        android:id="@+id/bt_toko"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toko"
+                        android:textColor="#f2890d"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="panggiltoko"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,413 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "51ed1690c966e848e3385194f2ade478",
+    "entities": [
+      {
+        "tableName": "produk",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nama` TEXT NOT NULL, `photo` BLOB NOT NULL, `harga` REAL NOT NULL, `stok` REAL NOT NULL, `kategori_id` INTEGER NOT NULL, FOREIGN KEY(`kategori_id`) REFERENCES `kategori`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama",
+            "columnName": "nama",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photo",
+            "columnName": "photo",
+            "affinity": "BLOB",
+            "notNull": true
+          },
+          {
+            "fieldPath": "harga",
+            "columnName": "harga",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stok",
+            "columnName": "stok",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kategoriId",
+            "columnName": "kategori_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_produk_id",
+            "unique": false,
+            "columnNames": [
+              "id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_produk_id` ON `${TABLE_NAME}` (`id`)"
+          },
+          {
+            "name": "index_produk_kategori_id",
+            "unique": false,
+            "columnNames": [
+              "kategori_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_produk_kategori_id` ON `${TABLE_NAME}` (`kategori_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "kategori",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "kategori_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "kategori",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nama` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama",
+            "columnName": "nama",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_kategori_id",
+            "unique": false,
+            "columnNames": [
+              "id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_kategori_id` ON `${TABLE_NAME}` (`id`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "keranjang",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`produk_id` INTEGER NOT NULL, `nota_id` INTEGER NOT NULL, `nama_produk` TEXT NOT NULL, `jumlah_produk` INTEGER NOT NULL, `sub_total` REAL NOT NULL, `status_pembelian` TEXT NOT NULL, `harga` REAL NOT NULL, `photo` BLOB NOT NULL, PRIMARY KEY(`produk_id`, `nota_id`), FOREIGN KEY(`produk_id`) REFERENCES `produk`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`nota_id`) REFERENCES `nota`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "produk_id",
+            "columnName": "produk_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nota_id",
+            "columnName": "nota_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama_produk",
+            "columnName": "nama_produk",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "jumlah_produk",
+            "columnName": "jumlah_produk",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sub_total",
+            "columnName": "sub_total",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_pembelian",
+            "columnName": "status_pembelian",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "harga",
+            "columnName": "harga",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photo",
+            "columnName": "photo",
+            "affinity": "BLOB",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "produk_id",
+            "nota_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_keranjang_nama_produk",
+            "unique": false,
+            "columnNames": [
+              "nama_produk"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_keranjang_nama_produk` ON `${TABLE_NAME}` (`nama_produk`)"
+          },
+          {
+            "name": "index_keranjang_nota_id",
+            "unique": false,
+            "columnNames": [
+              "nota_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_keranjang_nota_id` ON `${TABLE_NAME}` (`nota_id`)"
+          },
+          {
+            "name": "index_keranjang_produk_id",
+            "unique": false,
+            "columnNames": [
+              "produk_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_keranjang_produk_id` ON `${TABLE_NAME}` (`produk_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "produk",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "produk_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "nota",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "nota_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "nota",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `tanggal` INTEGER, `pembeli` TEXT, `ppn` REAL, `total_pembelian` REAL, `bayar` REAL, `kembalian` REAL, `status_pembayaran` TEXT, `toko_npwp` INTEGER, FOREIGN KEY(`toko_npwp`) REFERENCES `toko`(`npwp`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tanggal",
+            "columnName": "tanggal",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pembeli",
+            "columnName": "pembeli",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ppn",
+            "columnName": "ppn",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "total_pembelian",
+            "columnName": "total_pembelian",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bayar",
+            "columnName": "bayar",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "kembalian",
+            "columnName": "kembalian",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status_pembayaran",
+            "columnName": "status_pembayaran",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "toko_npwp",
+            "columnName": "toko_npwp",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_nota_id",
+            "unique": false,
+            "columnNames": [
+              "id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_nota_id` ON `${TABLE_NAME}` (`id`)"
+          },
+          {
+            "name": "index_nota_toko_npwp",
+            "unique": false,
+            "columnNames": [
+              "toko_npwp"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_nota_toko_npwp` ON `${TABLE_NAME}` (`toko_npwp`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "toko",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "toko_npwp"
+            ],
+            "referencedColumns": [
+              "npwp"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "toko",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`npwp` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nama` TEXT NOT NULL, `email` TEXT NOT NULL, `password` TEXT NOT NULL, `alamat` TEXT NOT NULL, `telpon` TEXT NOT NULL, `ppn` REAL NOT NULL, `total_trx` INTEGER NOT NULL, `akhir_trx` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "npwp",
+            "columnName": "npwp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama",
+            "columnName": "nama",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "password",
+            "columnName": "password",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alamat",
+            "columnName": "alamat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "telpon",
+            "columnName": "telpon",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ppn",
+            "columnName": "ppn",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "total_trx",
+            "columnName": "total_trx",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "akhir_trx",
+            "columnName": "akhir_trx",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "npwp"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_toko_npwp",
+            "unique": false,
+            "columnNames": [
+              "npwp"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_toko_npwp` ON `${TABLE_NAME}` (`npwp`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '51ed1690c966e848e3385194f2ade478')"
+    ]
+  }
+}

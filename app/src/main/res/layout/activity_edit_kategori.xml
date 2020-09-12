@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bt_add_kategori"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_detail_produk"
+    tools:context=".controller.Kategori.AddKategori">
+
+    <ImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        android:contentDescription="com.example.helloworldv4"
+        app:srcCompat="@drawable/img_logo" />
+
+    <EditText
+        android:id="@+id/et_addId_kat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/iv_brand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:drawableLeft="@drawable/ic_kategori"
+        android:drawablePadding="15dp"
+
+        android:ems="10"
+        android:hint="Masukan ID Kategori"
+
+        android:letterSpacing="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange" />
+
+    <EditText
+        android:id="@+id/et_addNama_kat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_kategori"
+        android:drawablePadding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_addId_kat"
+
+        android:ems="10"
+        android:hint="Masukan Kategori"
+        android:letterSpacing="0.1"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text=""
+        android:textColor="@color/colortextorange"
+        android:textColorHint="@color/colortextorange" />
+
+
+    <Button
+        android:id="@+id/bt_simpan_kat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_addNama_kat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@color/colorWhite"
+        android:contentDescription="App Description"
+
+        android:letterSpacing="0.2"
+        android:onClick="panggilsimpankaegori"
+        android:text="Simpan"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/bt_batal_kat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/bt_simpan_kat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+
+        android:letterSpacing="0.2"
+        android:onClick="reset"
+        android:text="Batal"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        tools:ignore="OnClick" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/bt_next"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:text="Next"-->
+    <!--        android:contentDescription="App Description"-->
+    <!--        android:layout_below="@id/bt_batal"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+
+    <!--        android:background="@color/colorWhite"-->
+    <!--        android:textColor="@color/colorBlack"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:onClick="panggildetailproduk"-->
+    <!--        android:letterSpacing="0.2"-->
+    <!--        />-->
+
+
+</RelativeLayout>
